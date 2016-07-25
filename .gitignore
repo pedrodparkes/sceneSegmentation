@@ -3,3 +3,8 @@
 *.opendb
 *.swp
 *.user
+*.log
+OpenCvPlayground/x64
+OpenCvPlayground/x86
+x64
+x86
