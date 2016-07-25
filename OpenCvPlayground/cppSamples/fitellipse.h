@@ -1,1 +1,4 @@
-int fitellipse( int argc, char** argv );
+namespace fitellipse
+{
+	int fitellipse( int argc, char** argv );
+}

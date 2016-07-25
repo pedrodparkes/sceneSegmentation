@@ -1,1 +1,4 @@
-int laplace( int argc, char** argv );
+namespace laplace
+{
+	int laplace( int argc, char** argv );
+}

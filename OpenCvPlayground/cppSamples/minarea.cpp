@@ -5,14 +5,13 @@
 
 using namespace cv;
 using namespace std;
-
 namespace minarea
 {
-
+	
 	static void help()
 	{
-		cout << "This program demonstrates finding the minimum enclosing box, triangle or circle of a set\n"
-			 << "of points using functions: minAreaRect() minEnclosingTriangle() minEnclosingCircle().\n"
+	    cout << "This program demonstrates finding the minimum enclosing box, triangle or circle of a set\n"
+	         << "of points using functions: minAreaRect() minEnclosingTriangle() minEnclosingCircle().\n"
 	         << "Random points are generated and then enclosed.\n\n"
 	         << "Press ESC, 'q' or 'Q' to exit and any other key to regenerate the set of points.\n\n"
 	         << "Call:\n"

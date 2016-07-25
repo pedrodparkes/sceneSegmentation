@@ -1,1 +1,4 @@
-int fback(int argc, char** argv);
+namespace fback
+{
+	int fback(int argc, char** argv);
+}

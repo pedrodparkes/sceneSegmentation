@@ -1,1 +1,4 @@
-int filestorage(int ac, char** av);
+namespace filestorage
+{
+	int filestorage(int ac, char** av);
+}

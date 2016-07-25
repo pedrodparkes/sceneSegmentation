@@ -1,1 +1,4 @@
-int detect_blob(int argc, char *argv[]);
+namespace detect_blob
+{
+	int detect_blob(int argc, char *argv[]);
+}

@@ -1,1 +1,4 @@
-int convexhull( int argc, char** argv );
+namespace convexhull
+{
+	int convexhull( int argc, char** argv );
+}

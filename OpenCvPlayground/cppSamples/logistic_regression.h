@@ -1,1 +1,4 @@
-int logistic_regression();
+namespace logistic_regression
+{
+	int logistic_regression();
+}

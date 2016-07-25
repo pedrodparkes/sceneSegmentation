@@ -22,10 +22,9 @@
 
 using namespace std;
 using namespace cv;
-
 namespace select3dobj
 {
-
+	
 	const char* helphelp =
 	"\nThis program's purpose is to collect data sets of an object and its segmentation mask.\n"
 	"\n"

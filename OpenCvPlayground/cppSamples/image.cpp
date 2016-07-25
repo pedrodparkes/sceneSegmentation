@@ -6,77 +6,77 @@
 
 using namespace cv; // all the new API is put into "cv" namespace. Export its content
 using namespace std;
-
 namespace image
 {
+	
 	static void help()
 	{
-		cout <<
-		"\nThis program shows how to use cv::Mat and IplImages converting back and forth.\n"
-		"It shows reading of images, converting to planes and merging back, color conversion\n"
-		"and also iterating through pixels.\n"
-		"Call:\n"
-		"./image [image-name Default: ../data/lena.jpg]\n" << endl;
+	    cout <<
+	    "\nThis program shows how to use cv::Mat and IplImages converting back and forth.\n"
+	    "It shows reading of images, converting to planes and merging back, color conversion\n"
+	    "and also iterating through pixels.\n"
+	    "Call:\n"
+	    "./image [image-name Default: ../data/lena.jpg]\n" << endl;
 	}
-
+	
 	// enable/disable use of mixed API in the code below.
 	#define DEMO_MIXED_API_USE 1
-
+	
 	#ifdef DEMO_MIXED_API_USE
 	#  include <opencv2/highgui/highgui_c.h>
 	#  include <opencv2/imgcodecs/imgcodecs_c.h>
 	#endif
-
+	
 	int image( int argc, char** argv )
 	{
-		cv::CommandLineParser parser(argc, argv, "{help h | |}{@image|../data/lena.jpg|}");
-		if (parser.has("help"))
-		{
-			help();
-			return 0;
-		}
-		string imagename = parser.get<string>("@image");
+	    cv::CommandLineParser parser(argc, argv, "{help h | |}{@image|../data/lena.jpg|}");
+	    if (parser.has("help"))
+	    {
+	        help();
+	        return 0;
+	    }
+	    string imagename = parser.get<string>("@image");
 	#if DEMO_MIXED_API_USE
-		//! [iplimage]
-		Ptr<IplImage> iplimg(cvLoadImage(imagename.c_str())); // Ptr<T> is safe ref-counting pointer class
-		if(!iplimg)
-		{
-			fprintf(stderr, "Can not load image %s\n", imagename.c_str());
-			return -1;
-		}
-		Mat img = cv::cvarrToMat(iplimg); // cv::Mat replaces the CvMat and IplImage, but it's easy to convert
-		// between the old and the new data structures (by default, only the header
-		// is converted, while the data is shared)
-		//! [iplimage]
+	    //! [iplimage]
+	    Ptr<IplImage> iplimg(cvLoadImage(imagename.c_str())); // Ptr<T> is safe ref-counting pointer class
+	    if(!iplimg)
+	    {
+	        fprintf(stderr, "Can not load image %s\n", imagename.c_str());
+	        return -1;
+	    }
+	    Mat img = cv::cvarrToMat(iplimg); // cv::Mat replaces the CvMat and IplImage, but it's easy to convert
+	    // between the old and the new data structures (by default, only the header
+	    // is converted, while the data is shared)
+	    //! [iplimage]
 	#else
-		Mat img = imread(imagename); // the newer cvLoadImage alternative, MATLAB-style function
-		if(img.empty())
-		{
-			fprintf(stderr, "Can not load image %s\n", imagename.c_str());
-			return -1;
-		}
+	    Mat img = imread(imagename); // the newer cvLoadImage alternative, MATLAB-style function
+	    if(img.empty())
+	    {
+	        fprintf(stderr, "Can not load image %s\n", imagename.c_str());
+	        return -1;
+	    }
 	#endif
-
-		if( img.empty() ) // check if the image has been loaded properly
-			return -1;
-
-		Mat img_yuv;
-		cvtColor(img, img_yuv, COLOR_BGR2YCrCb); // convert image to YUV color space. The output image will be created automatically
-
-		vector<Mat> planes; // Vector is template vector class, similar to STL's vector. It can store matrices too.
-		split(img_yuv, planes); // split the image into separate color planes
-
+	
+	    if( img.empty() ) // check if the image has been loaded properly
+	        return -1;
+	
+	    Mat img_yuv;
+	    cvtColor(img, img_yuv, COLOR_BGR2YCrCb); // convert image to YUV color space. The output image will be created automatically
+	
+	    vector<Mat> planes; // Vector is template vector class, similar to STL's vector. It can store matrices too.
+	    split(img_yuv, planes); // split the image into separate color planes
+	
 	#if 1
-		// method 1. process Y plane using an iterator
-		MatIterator_<uchar> it = planes[0].begin<uchar>(), it_end = planes[0].end<uchar>();
-		for(; it != it_end; ++it)
-		{
-			double v = *it*1.7 + rand()%21-10;
-			*it = saturate_cast<uchar>(v*v/255.);
-		}
-
-		// method 2. process the first chroma plane using pre-stored row pointer.
-		// method 3. process the second chroma plane using individual element access
+	    // method 1. process Y plane using an iterator
+	    MatIterator_<uchar> it = planes[0].begin<uchar>(), it_end = planes[0].end<uchar>();
+	    for(; it != it_end; ++it)
+	    {
+	        double v = *it*1.7 + rand()%21-10;
+	        *it = saturate_cast<uchar>(v*v/255.);
+	    }
+	
+	    // method 2. process the first chroma plane using pre-stored row pointer.
+	    // method 3. process the second chroma plane using individual element access
 	    for( int y = 0; y < img_yuv.rows; y++ )
 	    {
 	        uchar* Uptr = planes[1].ptr<uchar>(y);

@@ -238,7 +238,6 @@
   <ItemGroup>
     <None Include="OpenCV_debug.props" />
     <None Include="OpenCV_release.props" />
-    <None Include="cppSamples\crawler.py" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cppSamples\autofocus.h">

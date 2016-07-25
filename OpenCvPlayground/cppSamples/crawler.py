@@ -21,7 +21,7 @@ def crawl():
 		# insert namespace after last inluce or using
 		max = -1 
 		for n, line in enumerate(lines):
-			if '#include' in line or 'using ' in line:
+			if '#include' in line or 'using namespace' in line:
 				max = n
 		lines = [('\t'if n>max else '')+line for n, line in enumerate(lines)]	# intentation
 #		lines = ['\t'if n>max else ''+line for n, line in enumerate(lines)]	# intentation
@@ -48,6 +48,8 @@ def crawl():
 		# create header file
 		if res:
 			with open(headerFileName, 'w+') as headerFile:
-				headerFile.write(str(res)+';');
+				headerFile.write('namespace '+fileName+'\n{\n')
+				headerFile.write('\t'+str(res)+';\n');
+				headerFile.write('}\n')
 		# return status
 		print(fn + ' ' + str(repStatus))

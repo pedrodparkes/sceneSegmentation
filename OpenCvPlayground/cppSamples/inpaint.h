@@ -1,1 +1,4 @@
-int inpaint( int argc, char** argv );
+namespace inpaint
+{
+	int inpaint( int argc, char** argv );
+}

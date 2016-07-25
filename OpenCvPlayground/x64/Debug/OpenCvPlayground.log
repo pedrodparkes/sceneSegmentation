@@ -1,3 +1,7 @@
-﻿  main.cpp
+﻿  npr_demo.cpp
+  edge.cpp
+  create_mask.cpp
+  cloning_demo.cpp
+  Generating Code...
   OpenCvPlayground.vcxproj -> I:\Programming\computerVision\openCvPlayground\x64\Debug\OpenCvPlayground.exe
   OpenCvPlayground.vcxproj -> I:\Programming\computerVision\openCvPlayground\x64\Debug\OpenCvPlayground.pdb (Full PDB)

@@ -1,1 +1,4 @@
-int pca(int argc, char** argv);
+namespace pca
+{
+	int pca(int argc, char** argv);
+}

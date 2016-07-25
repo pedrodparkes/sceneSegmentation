@@ -1,1 +1,4 @@
-int smiledetect( int argc, const char** argv );
+namespace smiledetect
+{
+	int smiledetect( int argc, const char** argv );
+}

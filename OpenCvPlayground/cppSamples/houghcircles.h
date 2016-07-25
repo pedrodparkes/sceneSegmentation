@@ -1,1 +1,4 @@
-int houghcircles(int argc, char** argv);
+namespace houghcircles
+{
+	int houghcircles(int argc, char** argv);
+}

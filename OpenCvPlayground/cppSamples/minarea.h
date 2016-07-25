@@ -1,1 +1,4 @@
-int minarea( int /*argc*/, char** /*argv*/ );
+namespace minarea
+{
+	int minarea( int /*argc*/, char** /*argv*/ );
+}

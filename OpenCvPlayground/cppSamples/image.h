@@ -1,1 +1,4 @@
-int image( int argc, char** argv );
+namespace image
+{
+	int image( int argc, char** argv );
+}

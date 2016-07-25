@@ -1,1 +1,4 @@
-int dft(int argc, const char ** argv);
+namespace dft
+{
+	int dft(int argc, const char ** argv);
+}

@@ -102,5 +102,6 @@ namespace npr_demo
 	        imshow("Stylization",img);
 	    }
 	    waitKey(0);
+		return 0;
 	}
 }

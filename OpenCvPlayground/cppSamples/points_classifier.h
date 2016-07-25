@@ -1,1 +1,4 @@
-int points_classifier();
+namespace points_classifier
+{
+	int points_classifier();
+}

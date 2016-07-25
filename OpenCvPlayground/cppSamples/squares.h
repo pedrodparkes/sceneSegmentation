@@ -1,1 +1,4 @@
-int squares(int /*argc*/, char** /*argv*/);
+namespace squares
+{
+	int squares(int /*argc*/, char** /*argv*/);
+}

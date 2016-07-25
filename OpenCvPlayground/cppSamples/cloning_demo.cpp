@@ -246,5 +246,6 @@ namespace cloning_demo
 	        imwrite(folder + "cloned.png", result);
 	    }
 	    waitKey(0);
+		return 0;
 	}
 }

@@ -1,1 +1,4 @@
-int kalman(int, char**);
+namespace kalman
+{
+	int kalman(int, char**);
+}

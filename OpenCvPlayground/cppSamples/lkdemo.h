@@ -1,1 +1,4 @@
-int lkdemo( int argc, char** argv );
+namespace lkdemo
+{
+	int lkdemo( int argc, char** argv );
+}

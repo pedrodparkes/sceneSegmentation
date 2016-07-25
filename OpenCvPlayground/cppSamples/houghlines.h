@@ -1,1 +1,4 @@
-int houghlines(int argc, char** argv);
+namespace houghlines
+{
+	int houghlines(int argc, char** argv);
+}

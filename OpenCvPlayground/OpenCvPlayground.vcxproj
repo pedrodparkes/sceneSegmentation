@@ -218,7 +218,6 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cppSamples\crawler.py" />
     <None Include="OpenCV_debug.props" />
     <None Include="OpenCV_release.props" />
   </ItemGroup>

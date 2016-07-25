@@ -1,1 +1,4 @@
-int phase_corr(int, char* []);
+namespace phase_corr
+{
+	int phase_corr(int, char* []);
+}

@@ -1,1 +1,4 @@
-int ffilldemo( int argc, char** argv );
+namespace ffilldemo
+{
+	int ffilldemo( int argc, char** argv );
+}

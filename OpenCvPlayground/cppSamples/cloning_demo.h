@@ -1,1 +1,4 @@
-int cloning_demo();
+namespace cloning_demo
+{
+	int cloning_demo();
+}

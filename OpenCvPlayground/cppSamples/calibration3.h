@@ -1,1 +1,4 @@
-int 3calibration( int argc, char** argv );
+namespace calibration3
+{
+	int calibration3( int argc, char** argv );
+}

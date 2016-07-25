@@ -17,9 +17,9 @@
 
 using namespace std;
 using namespace cv;
-
 namespace facial_features
 {
+	
 	// Functions for facial feature detection
 	static void help();
 	static void detectFaces(Mat&, vector<Rect_<int> >&, string);
@@ -27,47 +27,47 @@ namespace facial_features
 	static void detectNose(Mat&, vector<Rect_<int> >&, string);
 	static void detectMouth(Mat&, vector<Rect_<int> >&, string);
 	static void detectFacialFeaures(Mat&, const vector<Rect_<int> >, string, string, string);
-
+	
 	string input_image_path;
 	string face_cascade_path, eye_cascade_path, nose_cascade_path, mouth_cascade_path;
-
+	
 	int facial_features(int argc, char** argv)
 	{
-		cv::CommandLineParser parser(argc, argv,
-				"{eyes||}{nose||}{mouth||}{help h||}");
-		if (parser.has("help"))
-		{
-			help();
-			return 0;
-		}
-		input_image_path = parser.get<string>(0);
-		face_cascade_path = parser.get<string>(1);
-		eye_cascade_path = parser.has("eyes") ? parser.get<string>("eyes") : "";
-		nose_cascade_path = parser.has("nose") ? parser.get<string>("nose") : "";
-		mouth_cascade_path = parser.has("mouth") ? parser.get<string>("mouth") : "";
-		if (input_image_path.empty() || face_cascade_path.empty())
-		{
-			cout << "IMAGE or FACE_CASCADE are not specified";
-			return 1;
-		}
-		// Load image and cascade classifier files
-		Mat image;
-		image = imread(input_image_path);
-
-		// Detect faces and facial features
-		vector<Rect_<int> > faces;
-		detectFaces(image, faces, face_cascade_path);
-		detectFacialFeaures(image, faces, eye_cascade_path, nose_cascade_path, mouth_cascade_path);
-
-		imshow("Result", image);
-
-		waitKey(0);
-		return 0;
+	    cv::CommandLineParser parser(argc, argv,
+	            "{eyes||}{nose||}{mouth||}{help h||}");
+	    if (parser.has("help"))
+	    {
+	        help();
+	        return 0;
+	    }
+	    input_image_path = parser.get<string>(0);
+	    face_cascade_path = parser.get<string>(1);
+	    eye_cascade_path = parser.has("eyes") ? parser.get<string>("eyes") : "";
+	    nose_cascade_path = parser.has("nose") ? parser.get<string>("nose") : "";
+	    mouth_cascade_path = parser.has("mouth") ? parser.get<string>("mouth") : "";
+	    if (input_image_path.empty() || face_cascade_path.empty())
+	    {
+	        cout << "IMAGE or FACE_CASCADE are not specified";
+	        return 1;
+	    }
+	    // Load image and cascade classifier files
+	    Mat image;
+	    image = imread(input_image_path);
+	
+	    // Detect faces and facial features
+	    vector<Rect_<int> > faces;
+	    detectFaces(image, faces, face_cascade_path);
+	    detectFacialFeaures(image, faces, eye_cascade_path, nose_cascade_path, mouth_cascade_path);
+	
+	    imshow("Result", image);
+	
+	    waitKey(0);
+	    return 0;
 	}
-
+	
 	static void help()
 	{
-		cout << "\nThis file demonstrates facial feature points detection using Haarcascade classifiers.\n"
+	    cout << "\nThis file demonstrates facial feature points detection using Haarcascade classifiers.\n"
 	        "The program detects a face and eyes, nose and mouth inside the face."
 	        "The code has been tested on the Japanese Female Facial Expression (JAFFE) database and found"
 	        "to give reasonably accurate results. \n";

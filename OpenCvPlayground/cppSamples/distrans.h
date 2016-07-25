@@ -1,1 +1,4 @@
-int distrans( int argc, const char** argv );
+namespace distrans
+{
+	int distrans( int argc, const char** argv );
+}

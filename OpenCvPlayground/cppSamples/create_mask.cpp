@@ -158,5 +158,7 @@ namespace create_mask
 	
 	    img0.release();
 	    img1.release();
+
+		return 0;
 	}
 }

@@ -1,1 +1,4 @@
-int stitching_detailed(int argc, char* argv[]);
+namespace stitching_detailed
+{
+	int stitching_detailed(int argc, char* argv[]);
+}
