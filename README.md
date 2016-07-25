@@ -7,8 +7,8 @@ To run some specific sample go to main.cpp
 2) Define its name as sampleName
 
 Example for Watershed sample:
-#include "cppSamples\watershed.h"	// include sample header here
-#define sampleName watershed		// set sample name her
+include "cppSamples\watershed.h"
+define sampleName watershed
 
 Most samples require input parameters
 To set them up:
