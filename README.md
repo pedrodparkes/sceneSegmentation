@@ -1,3 +1,5 @@
+# sceneSegmentation
+
 Project contains openCV built in samples.
 
 To run some specific sample go to main.cpp
