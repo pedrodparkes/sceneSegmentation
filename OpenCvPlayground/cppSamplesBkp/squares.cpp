@@ -1,5 +1,3 @@
-#include "squares.h"
-
 // The "Square Detector" program.
 // It loads several images sequentially and tries to find squares in
 // each image
@@ -142,7 +140,7 @@ static void drawSquares( Mat& image, const vector<vector<Point> >& squares )
 }
 
 
-int squares(int /*argc*/, char** /*argv*/)
+int main(int /*argc*/, char** /*argv*/)
 {
     static const char* names[] = { "../data/pic1.png", "../data/pic2.png", "../data/pic3.png",
         "../data/pic4.png", "../data/pic5.png", "../data/pic6.png", 0 };

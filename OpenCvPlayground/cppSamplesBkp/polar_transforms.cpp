@@ -1,5 +1,3 @@
-#include "polar_transforms.h"
-
 #include "opencv2/imgproc/imgproc_c.h"
 #include "opencv2/videoio/videoio_c.h"
 #include "opencv2/highgui/highgui_c.h"
@@ -15,7 +13,7 @@ static void help( void )
             "./polar_transforms [[camera number -- Default 0],[AVI path_filename]]\n\n"
             );
 }
-int polar_transforms( int argc, char** argv )
+int main( int argc, char** argv )
 {
     CvCapture* capture = 0;
     IplImage*  log_polar_img = 0;

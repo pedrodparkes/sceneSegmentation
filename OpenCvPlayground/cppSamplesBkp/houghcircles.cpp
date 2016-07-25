@@ -1,5 +1,3 @@
-#include "houghcircles.h"
-
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -16,7 +14,7 @@ static void help()
             "./houghcircles <image_name>, Default is ../data/board.jpg\n" << endl;
 }
 
-int houghcircles(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv,
         "{help h ||}{@image|../data/board.jpg|}"

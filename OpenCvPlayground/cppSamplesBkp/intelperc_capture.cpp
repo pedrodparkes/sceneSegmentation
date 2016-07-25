@@ -1,5 +1,3 @@
-#include "intelperc_capture.h"
-
 // testOpenCVCam.cpp : Defines the entry point for the console application.
 //
 
@@ -264,7 +262,7 @@ static void imshowDepth(const char *winname, Mat &depth, VideoCapture &capture)
     imshow(winname, image);
 }
 
-int intelperc_capture(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     parseCMDLine(argc, argv);
 

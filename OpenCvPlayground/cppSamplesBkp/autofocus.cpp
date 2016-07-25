@@ -1,5 +1,3 @@
-#include "autofocus.h"
-
 /*
  * Copyright (c) 2015, Piotr Dobrowolski dobrypd[at]gmail[dot]com
  * All rights reserved.
@@ -280,7 +278,7 @@ static bool parseArguments(int argc, char ** argv)
     return true;
 }
 
-int autofocus(int argc, char ** argv)
+int main(int argc, char ** argv)
 {
     if (!parseArguments(argc, argv))
     {

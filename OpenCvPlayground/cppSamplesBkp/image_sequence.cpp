@@ -1,5 +1,3 @@
-#include "image_sequence.h"
-
 #include <opencv2/core/core.hpp>
 #include <opencv2/videoio/videoio.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -18,7 +16,7 @@ static void help(char** argv)
          << endl;
 }
 
-int image_sequence(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}{@image||}");
     if (parser.has("help"))

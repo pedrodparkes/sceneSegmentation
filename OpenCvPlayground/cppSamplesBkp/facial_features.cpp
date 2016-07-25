@@ -1,5 +1,3 @@
-#include "facial_features.h"
-
 /*
  * Author: Samyak Datta (datta[dot]samyak[at]gmail.com)
  *
@@ -31,7 +29,7 @@ static void detectFacialFeaures(Mat&, const vector<Rect_<int> >, string, string,
 string input_image_path;
 string face_cascade_path, eye_cascade_path, nose_cascade_path, mouth_cascade_path;
 
-int facial_features(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv,
             "{eyes||}{nose||}{mouth||}{help h||}");

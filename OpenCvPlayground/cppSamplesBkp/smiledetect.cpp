@@ -1,5 +1,3 @@
-#include "smiledetect.h"
-
 #include "opencv2/objdetect.hpp"
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
@@ -30,7 +28,7 @@ void detectAndDraw( Mat& img, CascadeClassifier& cascade,
 string cascadeName;
 string nestedCascadeName;
 
-int smiledetect( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     VideoCapture capture;
     Mat frame, image;

@@ -1,5 +1,3 @@
-#include "connected_components.h"
-
 #include <opencv2/core/utility.hpp>
 #include "opencv2/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -48,7 +46,7 @@ const char* keys =
     "{help h||}{@image|../data/stuff.jpg|image for converting to a grayscale}"
 };
 
-int connected_components( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     CommandLineParser parser(argc, argv, keys);
     if (parser.has("help"))

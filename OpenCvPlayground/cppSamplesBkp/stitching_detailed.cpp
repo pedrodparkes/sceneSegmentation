@@ -1,5 +1,3 @@
-#include "stitching_detailed.h"
-
 /*M///////////////////////////////////////////////////////////////////////////////////////
 //
 //  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
@@ -357,7 +355,7 @@ static int parseCmdArgs(int argc, char** argv)
 }
 
 
-int stitching_detailed(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 #if ENABLE_LOG
     int64 app_start_time = getTickCount();

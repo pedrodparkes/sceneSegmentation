@@ -1,5 +1,3 @@
-#include "edge.h"
-
 #include "opencv2/core/utility.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -38,7 +36,7 @@ const char* keys =
     "{help h||}{@image |../data/fruits.jpg|input image name}"
 };
 
-int edge( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     CommandLineParser parser(argc, argv, keys);
     if (parser.has("help"))

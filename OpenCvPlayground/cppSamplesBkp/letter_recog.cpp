@@ -1,5 +1,3 @@
-#include "letter_recog.h"
-
 #include "opencv2/core/core.hpp"
 #include "opencv2/ml/ml.hpp"
 
@@ -515,7 +513,7 @@ build_svm_classifier( const string& data_filename,
     return true;
 }
 
-int letter_recog( int argc, char *argv[] )
+int main( int argc, char *argv[] )
 {
     string filename_to_save = "";
     string filename_to_load = "";

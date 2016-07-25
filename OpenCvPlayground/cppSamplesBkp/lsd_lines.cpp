@@ -1,5 +1,3 @@
-#include "lsd_lines.h"
-
 #include <iostream>
 #include <string>
 
@@ -12,7 +10,7 @@
 using namespace std;
 using namespace cv;
 
-int lsd_lines(int argc, char** argv)
+int main(int argc, char** argv)
 {
     std::string in;
     cv::CommandLineParser parser(argc, argv, "{@input|../data/building.jpg|input image}{help h||show help message}");

@@ -1,5 +1,3 @@
-#include "image.h"
-
 #include <stdio.h>
 #include <iostream>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -27,7 +25,7 @@ static void help()
 #  include <opencv2/imgcodecs/imgcodecs_c.h>
 #endif
 
-int image( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv, "{help h | |}{@image|../data/lena.jpg|}");
     if (parser.has("help"))

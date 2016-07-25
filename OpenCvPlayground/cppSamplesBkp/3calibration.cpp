@@ -1,5 +1,3 @@
-#include "3calibration.h"
-
 /*
  * 3calibration.cpp -- Calibrate 3 cameras in a horizontal line together.
  */
@@ -175,7 +173,7 @@ static bool readStringList( const string& filename, vector<string>& l )
 }
 
 
-int 3calibration( int argc, char** argv )
+int main( int argc, char** argv )
 {
     int i, k;
     int flags = 0;

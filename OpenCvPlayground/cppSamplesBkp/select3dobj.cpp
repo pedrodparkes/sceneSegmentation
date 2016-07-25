@@ -1,5 +1,3 @@
-#include "select3dobj.h"
-
 /*
  *
  * select3obj.cpp With a calibration chessboard on a table, mark an object in a 3D box and
@@ -384,7 +382,7 @@ static bool readStringList( const string& filename, vector<string>& l )
 }
 
 
-int select3dobj(int argc, char** argv)
+int main(int argc, char** argv)
 {
     const char* help = "Usage: select3dobj -w=<board_width> -h=<board_height> [-s=<square_size>]\n"
            "\t-i=<intrinsics_filename> -o=<output_prefix> [video_filename/cameraId]\n";

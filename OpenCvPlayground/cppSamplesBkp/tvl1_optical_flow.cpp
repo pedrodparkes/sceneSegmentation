@@ -1,5 +1,3 @@
-#include "tvl1_optical_flow.h"
-
 #include <iostream>
 #include <fstream>
 
@@ -148,7 +146,7 @@ static void writeOpticalFlowToFile(const Mat_<Point2f>& flow, const string& file
     }
 }
 
-int tvl1_optical_flow(int argc, const char* argv[])
+int main(int argc, const char* argv[])
 {
     cv::CommandLineParser parser(argc, argv, "{help h || show help message}"
             "{ @frame0 | | frame 0}{ @frame1 | | frame 1}{ @output | | output flow}");

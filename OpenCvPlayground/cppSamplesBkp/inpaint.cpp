@@ -1,5 +1,3 @@
-#include "inpaint.h"
-
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -47,7 +45,7 @@ static void onMouse( int event, int x, int y, int flags, void* )
 }
 
 
-int inpaint( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}{@image|../data/fruits.jpg|}");
     if (parser.has("help"))

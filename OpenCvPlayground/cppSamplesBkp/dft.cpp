@@ -1,5 +1,3 @@
-#include "dft.h"
-
 #include "opencv2/core.hpp"
 #include "opencv2/core/utility.hpp"
 #include "opencv2/imgproc.hpp"
@@ -24,7 +22,7 @@ const char* keys =
     "{help h||}{@image|../data/lena.jpg|input image file}"
 };
 
-int dft(int argc, const char ** argv)
+int main(int argc, const char ** argv)
 {
     help();
     CommandLineParser parser(argc, argv, keys);

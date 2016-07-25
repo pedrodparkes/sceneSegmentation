@@ -1,5 +1,3 @@
-#include "kmeans.h"
-
 #include "opencv2/highgui.hpp"
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
@@ -17,7 +15,7 @@ using namespace std;
 //             "./kmeans\n" << endl;
 // }
 
-int kmeans( int /*argc*/, char** /*argv*/ )
+int main( int /*argc*/, char** /*argv*/ )
 {
     const int MAX_CLUSTERS = 5;
     Scalar colorTab[] =

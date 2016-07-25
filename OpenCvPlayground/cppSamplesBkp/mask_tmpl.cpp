@@ -1,5 +1,3 @@
-#include "mask_tmpl.h"
-
 #include "opencv2/imgproc.hpp"
 #include "opencv2/highgui.hpp"
 
@@ -19,7 +17,7 @@ static void help()
             << endl;
 }
 
-int mask_tmpl( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     cv::CommandLineParser parser(argc, argv,
         "{help h||}"

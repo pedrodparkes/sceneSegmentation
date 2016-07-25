@@ -1,5 +1,3 @@
-#include "calibration.h"
-
 #include "opencv2/core.hpp"
 #include <opencv2/core/utility.hpp>
 #include "opencv2/imgproc.hpp"
@@ -296,7 +294,7 @@ static bool runAndSave(const string& outputFilename,
 }
 
 
-int calibration( int argc, char** argv )
+int main( int argc, char** argv )
 {
     Size boardSize, imageSize;
     float squareSize, aspectRatio;

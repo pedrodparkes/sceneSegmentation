@@ -1,5 +1,3 @@
-#include "cout_mat.h"
-
 /*
  *
  * cvout_sample just demonstrates the serial out capabilities of cv::Mat
@@ -27,7 +25,7 @@ static void help()
 }
 
 
-int cout_mat(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}");
     if (parser.has("help"))

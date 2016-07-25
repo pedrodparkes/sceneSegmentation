@@ -1,5 +1,3 @@
-#include "phase_corr.h"
-
 #include "opencv2/core/core.hpp"
 #include "opencv2/videoio/videoio.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -7,7 +5,7 @@
 
 using namespace cv;
 
-int phase_corr(int, char* [])
+int main(int, char* [])
 {
     VideoCapture video(0);
     Mat frame, curr, prev, curr64f, prev64f, hann;

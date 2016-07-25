@@ -1,5 +1,3 @@
-#include "fback.h"
-
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/videoio/videoio.hpp"
@@ -32,7 +30,7 @@ static void drawOptFlowMap(const Mat& flow, Mat& cflowmap, int step,
         }
 }
 
-int fback(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}");
     if (parser.has("help"))

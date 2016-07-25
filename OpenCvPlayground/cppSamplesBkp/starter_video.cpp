@@ -1,5 +1,3 @@
-#include "starter_video.h"
-
 /*
 * starter_video.cpp
 *
@@ -72,7 +70,7 @@ namespace {
     }
 }
 
-int starter_video(int ac, char** av) {
+int main(int ac, char** av) {
     cv::CommandLineParser parser(ac, av, "{help h||}{@input||}");
     if (parser.has("help"))
     {

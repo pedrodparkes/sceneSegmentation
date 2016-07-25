@@ -1,5 +1,3 @@
-#include "kalman.h"
-
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/highgui/highgui.hpp"
 
@@ -29,7 +27,7 @@ static void help()
             );
 }
 
-int kalman(int, char**)
+int main(int, char**)
 {
     help();
     Mat img(500, 500, CV_8UC3);

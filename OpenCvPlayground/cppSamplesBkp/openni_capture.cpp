@@ -1,5 +1,3 @@
-#include "openni_capture.h"
-
 #include "opencv2/videoio/videoio.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -139,7 +137,7 @@ static void parseCommandLine( int argc, char* argv[], bool& isColorizeDisp, bool
  * To work with Kinect or XtionPRO the user must install OpenNI library and PrimeSensorModule for OpenNI and
  * configure OpenCV with WITH_OPENNI flag is ON (using CMake).
  */
-int openni_capture( int argc, char* argv[] )
+int main( int argc, char* argv[] )
 {
     bool isColorizeDisp, isFixedMaxDisp;
     int imageMode;

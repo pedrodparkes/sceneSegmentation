@@ -1,5 +1,3 @@
-#include "logistic_regression.h"
-
 /*//////////////////////////////////////////////////////////////////////////////////////
 // IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
 
@@ -83,7 +81,7 @@ static float calculateAccuracyPercent(const Mat &original, const Mat &predicted)
     return 100 * (float)countNonZero(original == predicted) / predicted.rows;
 }
 
-int logistic_regression()
+int main()
 {
     const String filename = "../data/data01.xml";
     cout << "**********************************************************************" << endl;

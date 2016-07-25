@@ -1,5 +1,3 @@
-#include "houghlines.h"
-
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -16,7 +14,7 @@ static void help()
             "./houghlines <image_name>, Default is ../data/pic1.png\n" << endl;
 }
 
-int houghlines(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv,
         "{help h||}{@image|../data/pic1.png|}"

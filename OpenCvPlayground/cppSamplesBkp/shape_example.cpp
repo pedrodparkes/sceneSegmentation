@@ -1,5 +1,3 @@
-#include "shape_example.h"
-
 /*
  * shape_context.cpp -- Shape context demo for shape matching
  */
@@ -54,7 +52,7 @@ static vector<Point> simpleContour( const Mat& currentQuery, int n=300 )
     return cont;
 }
 
-int shape_example(int argc, char** argv)
+int main(int argc, char** argv)
 {
     string path = "../data/shape_sample/";
     cv::CommandLineParser parser(argc, argv, "{help h||}{@input|1|}");

@@ -1,5 +1,3 @@
-#include "lkdemo.h"
-
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/videoio/videoio.hpp"
@@ -37,7 +35,7 @@ static void onMouse( int event, int x, int y, int /*flags*/, void* /*param*/ )
     }
 }
 
-int lkdemo( int argc, char** argv )
+int main( int argc, char** argv )
 {
     VideoCapture cap;
     TermCriteria termcrit(TermCriteria::COUNT|TermCriteria::EPS,20,0.03);

@@ -1,5 +1,3 @@
-#include "stereo_calib.h"
-
 /* This is sample from the OpenCV book. The copyright notice is below */
 
 /* *************** License:**************************
@@ -345,7 +343,7 @@ static bool readStringList( const string& filename, vector<string>& l )
     return true;
 }
 
-int stereo_calib(int argc, char** argv)
+int main(int argc, char** argv)
 {
     Size boardSize;
     string imagelistfn;

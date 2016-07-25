@@ -1,5 +1,3 @@
-#include "detect_blob.h"
-
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <map>
@@ -67,7 +65,7 @@ static String Legende(SimpleBlobDetector::Params &pAct)
 
 
 
-int detect_blob(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     vector<String> fileName;
     Mat img(600, 800, CV_8UC1);

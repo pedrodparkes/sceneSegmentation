@@ -1,17 +1,11 @@
 #include <iostream>
-#include "cppSamples\test.h"
-//" display_image.cpp"
+#include "cppSamples\watershed.h"			// include sample header here
+#define sampleName watershed				// set sample name here
 
 using namespace std;
-
+using namespace sampleName;
 
 int main(int argc, char** argv)
 {
-	if (argc != 2)
-	{
-		cout << " Usage: display_image ImageToLoadAndDisplay" << endl;
-		return -1;
-	}
-
-	return 0;
+	return sampleName::sampleName(argc, argv);
 }

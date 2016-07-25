@@ -1,5 +1,3 @@
-#include "stereo_match.h"
-
 /*
  *  stereo_match.cpp
  *  calibration
@@ -43,7 +41,7 @@ static void saveXYZ(const char* filename, const Mat& mat)
     fclose(fp);
 }
 
-int stereo_match(int argc, char** argv)
+int main(int argc, char** argv)
 {
     std::string img1_filename = "";
     std::string img2_filename = "";

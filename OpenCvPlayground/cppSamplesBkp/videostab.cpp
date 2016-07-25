@@ -1,5 +1,3 @@
-#include "videostab.h"
-
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -280,7 +278,7 @@ private:
 };
 
 
-int videostab(int argc, const char **argv)
+int main(int argc, const char **argv)
 {
     try
     {

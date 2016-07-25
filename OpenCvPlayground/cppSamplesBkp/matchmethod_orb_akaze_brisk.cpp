@@ -1,5 +1,3 @@
-#include "matchmethod_orb_akaze_brisk.h"
-
 #include <opencv2/opencv.hpp>
 #include <vector>
 #include <iostream>
@@ -17,7 +15,7 @@ static void help()
 
 
 
-int matchmethod_orb_akaze_brisk(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     vector<String> typeDesc;
     vector<String> typeAlgoMatch;

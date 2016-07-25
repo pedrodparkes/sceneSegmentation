@@ -1,5 +1,3 @@
-#include "grabcut.h"
-
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -276,7 +274,7 @@ static void on_mouse( int event, int x, int y, int flags, void* param )
     gcapp.mouseClick( event, x, y, flags, param );
 }
 
-int grabcut( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}{@input||}");
     if (parser.has("help"))

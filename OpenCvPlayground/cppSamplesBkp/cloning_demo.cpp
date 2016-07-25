@@ -1,5 +1,3 @@
-#include "cloning_demo.h"
-
 /*
 * cloning_demo.cpp
 *
@@ -34,7 +32,7 @@
 using namespace std;
 using namespace cv;
 
-int cloning_demo()
+int main()
 {
     cout << endl;
     cout << "Cloning Module" << endl;

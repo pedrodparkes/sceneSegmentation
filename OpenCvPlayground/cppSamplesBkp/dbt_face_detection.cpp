@@ -1,5 +1,3 @@
-#include "dbt_face_detection.h"
-
 #if defined(__linux__) || defined(LINUX) || defined(__APPLE__) || defined(ANDROID)
 
 #include <opencv2/imgproc/imgproc.hpp>  // Gaussian Blur
@@ -41,7 +39,7 @@ class CascadeDetectorAdapter: public DetectionBasedTracker::IDetector
         cv::Ptr<cv::CascadeClassifier> Detector;
  };
 
-int dbt_face_detection(int , char** )
+int main(int , char** )
 {
     namedWindow(WindowName);
 
@@ -98,7 +96,7 @@ int dbt_face_detection(int , char** )
 #else
 
 #include <stdio.h>
-int dbt_face_detection()
+int main()
 {
     printf("This sample works for UNIX or ANDROID only\n");
     return 0;

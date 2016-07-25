@@ -1,5 +1,3 @@
-#include "detect_mser.h"
-
 #include <opencv2/opencv.hpp>
 #include "opencv2/core/opengl.hpp"
 #include "opencv2/cvconfig.h"
@@ -399,7 +397,7 @@ static Mat MakeSyntheticImage()
     return img;
 }
 
-int detect_mser(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     vector<String> fileName;
     Mat imgOrig,img;

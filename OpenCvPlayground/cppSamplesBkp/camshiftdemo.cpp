@@ -1,5 +1,3 @@
-#include "camshiftdemo.h"
-
 #include <opencv2/core/utility.hpp>
 #include "opencv2/video/tracking.hpp"
 #include "opencv2/imgproc.hpp"
@@ -73,7 +71,7 @@ const char* keys =
     "{help h | | show help message}{@camera_number| 0 | camera number}"
 };
 
-int camshiftdemo( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     VideoCapture cap;
     Rect trackWindow;

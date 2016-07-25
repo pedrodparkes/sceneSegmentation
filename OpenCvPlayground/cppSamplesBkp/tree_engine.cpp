@@ -1,5 +1,3 @@
-#include "tree_engine.h"
-
 #include "opencv2/ml/ml.hpp"
 #include "opencv2/core/core.hpp"
 #include "opencv2/core/utility.hpp"
@@ -34,7 +32,7 @@ static void train_and_print_errs(Ptr<StatModel> model, const Ptr<TrainData>& dat
     }
 }
 
-int tree_engine(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{ help h | | }{r | 0 | }{ts | | }{@input | | }");
     if (parser.has("help"))

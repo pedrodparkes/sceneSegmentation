@@ -1,5 +1,3 @@
-#include "minarea.h"
-
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
@@ -19,7 +17,7 @@ static void help()
          << "Using OpenCV v" << CV_VERSION << "\n" << endl;
 }
 
-int minarea( int /*argc*/, char** /*argv*/ )
+int main( int /*argc*/, char** /*argv*/ )
 {
     help();
 

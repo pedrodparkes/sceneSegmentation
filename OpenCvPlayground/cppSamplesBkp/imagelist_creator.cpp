@@ -1,5 +1,3 @@
-#include "imagelist_creator.h"
-
 /*this creates a yaml or xml list of files from the command line args
  */
 
@@ -23,7 +21,7 @@ static void help(char** av)
       << "This will serialize this list of images or whatever with opencv's FileStorage framework" << endl;
 }
 
-int imagelist_creator(int ac, char** av)
+int main(int ac, char** av)
 {
   cv::CommandLineParser parser(ac, av, "{help h||}{@output||}");
   if (parser.has("help"))

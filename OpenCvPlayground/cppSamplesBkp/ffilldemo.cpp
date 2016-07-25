@@ -1,5 +1,3 @@
-#include "ffilldemo.h"
-
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/videoio/videoio.hpp"
@@ -73,7 +71,7 @@ static void onMouse( int event, int x, int y, int, void* )
 }
 
 
-int ffilldemo( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser (argc, argv,
         "{help h | | show help message}{@image|../data/fruits.jpg| input image}"

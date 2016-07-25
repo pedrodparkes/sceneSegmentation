@@ -1,5 +1,3 @@
-#include "npr_demo.h"
-
 /*
 * npr_demo.cpp
 *
@@ -28,7 +26,7 @@
 using namespace std;
 using namespace cv;
 
-int npr_demo(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     cv::CommandLineParser parser(argc, argv, "{help h||show help message}{@image||input image}");
     if (parser.has("help"))

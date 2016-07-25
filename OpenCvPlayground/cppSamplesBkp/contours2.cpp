@@ -1,5 +1,3 @@
-#include "contours2.h"
-
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include <math.h>
@@ -35,7 +33,7 @@ static void on_trackbar(int, void*)
     imshow("contours", cnt_img);
 }
 
-int contours2( int argc, char** argv)
+int main( int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}");
     if (parser.has("help"))

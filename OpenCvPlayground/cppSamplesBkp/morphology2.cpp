@@ -1,5 +1,3 @@
-#include "morphology2.h"
-
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -59,7 +57,7 @@ static void ErodeDilate(int, void*)
 }
 
 
-int morphology2( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}{ @image | ../data/baboon.jpg | }");
     if (parser.has("help"))

@@ -1,5 +1,3 @@
-#include "bgfg_segm.h"
-
 #include "opencv2/core.hpp"
 #include <opencv2/core/utility.hpp>
 #include "opencv2/imgproc.hpp"
@@ -29,7 +27,7 @@ const char* keys =
 };
 
 //this is a sample for foreground detection functions
-int bgfg_segm(int argc, const char** argv)
+int main(int argc, const char** argv)
 {
     help();
 

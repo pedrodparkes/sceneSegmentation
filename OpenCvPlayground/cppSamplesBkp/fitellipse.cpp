@@ -1,5 +1,3 @@
-#include "fitellipse.h"
-
 /********************************************************************************
 *
 *
@@ -38,7 +36,7 @@ Mat image;
 
 void processImage(int, void*);
 
-int fitellipse( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv,
         "{help h||}{@image|../data/stuff.jpg|}"

@@ -1,5 +1,3 @@
-#include "opencv_version.h"
-
 #include <opencv2/core/utility.hpp>
 #include <iostream>
 
@@ -9,7 +7,7 @@ const char* keys =
     "{ h help  | | print this help           }"
 };
 
-int opencv_version(int argc, const char* argv[])
+int main(int argc, const char* argv[])
 {
     cv::CommandLineParser parser(argc, argv, keys);
 

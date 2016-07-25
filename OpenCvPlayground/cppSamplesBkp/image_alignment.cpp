@@ -1,5 +1,3 @@
-#include "image_alignment.h"
-
 /*
 * This sample demonstrates the use of the function
 * findTransformECC that implements the image alignment ECC algorithm

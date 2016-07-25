@@ -1,5 +1,3 @@
-#include "stitching.h"
-
 /*M///////////////////////////////////////////////////////////////////////////////////////
 //
 //  IMPORTANT: READ BEFORE DOWNLOADING, COPYING, INSTALLING OR USING.
@@ -58,7 +56,7 @@ string result_name = "result.jpg";
 void printUsage();
 int parseCmdArgs(int argc, char** argv);
 
-int stitching(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
     int retval = parseCmdArgs(argc, argv);
     if (retval) return -1;

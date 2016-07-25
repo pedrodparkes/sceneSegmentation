@@ -1,5 +1,3 @@
-#include "cloning_gui.h"
-
 /*
 * cloning.cpp
 *
@@ -271,7 +269,7 @@ void destination(int event, int x, int y, int, void*)
     im1.release();
 }
 
-int cloning_gui()
+int main()
 {
     cout << endl;
     cout << "Cloning Module" << endl;

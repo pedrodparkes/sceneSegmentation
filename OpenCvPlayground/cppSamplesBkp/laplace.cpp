@@ -1,5 +1,3 @@
-#include "laplace.h"
-
 #include "opencv2/videoio/videoio.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -25,7 +23,7 @@ enum {GAUSSIAN, BLUR, MEDIAN};
 int sigma = 3;
 int smoothType = GAUSSIAN;
 
-int laplace( int argc, char** argv )
+int main( int argc, char** argv )
 {
     VideoCapture cap;
     cv::CommandLineParser parser(argc, argv, "{help h | | }{ c | 0 | }{ p | | }");

@@ -1,5 +1,3 @@
-#include "convexhull.h"
-
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include <fstream>
@@ -15,7 +13,7 @@ static void help()
          << "./convexhull\n" << endl;
 }
 
-int convexhull( int argc, char** argv )
+int main( int argc, char** argv )
 {
     CommandLineParser parser(argc, argv, "{help h||}");
     if (parser.has("help"))

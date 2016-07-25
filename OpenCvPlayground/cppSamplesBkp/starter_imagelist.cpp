@@ -1,5 +1,3 @@
-#include "starter_imagelist.h"
-
 /*
  * starter_imagelist.cpp
  *
@@ -62,7 +60,7 @@ int process(vector<string> images)
 
 }
 
-int starter_imagelist(int ac, char** av)
+int main(int ac, char** av)
 {
   cv::CommandLineParser parser(ac, av, "{help h||}{@input||}");
   if (parser.has("help"))

@@ -1,5 +1,3 @@
-#include "filestorage.h"
-
 /*
  * filestorage_sample demonstrate the usage of the opencv serialization functionality
  */
@@ -70,7 +68,7 @@ static ostream& operator<<(ostream& out, const MyData& m){
   out << "A = " << m.A << "}";
   return out;
 }
-int filestorage(int ac, char** av)
+int main(int ac, char** av)
 {
   cv::CommandLineParser parser(ac, av,
     "{@input||}{help h ||}"

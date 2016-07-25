@@ -1,5 +1,3 @@
-#include "create_mask.h"
-
 /*
 * create_mask.cpp
 *
@@ -123,7 +121,7 @@ void mouseHandler(int event, int x, int y, int, void*)
     }
 }
 
-int create_mask(int argc, char **argv)
+int main(int argc, char **argv)
 {
     cv::CommandLineParser parser(argc, argv, "{help h | | show help message}{@input | | input image}");
     if (parser.has("help"))

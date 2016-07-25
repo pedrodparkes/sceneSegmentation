@@ -1,5 +1,3 @@
-#include "distrans.h"
-
 #include <opencv2/core/utility.hpp>
 #include "opencv2/imgproc.hpp"
 #include "opencv2/imgcodecs.hpp"
@@ -112,7 +110,7 @@ const char* keys =
     "{help h||}{@image |../data/stuff.jpg|input image file}"
 };
 
-int distrans( int argc, const char** argv )
+int main( int argc, const char** argv )
 {
     CommandLineParser parser(argc, argv, keys);
     help();

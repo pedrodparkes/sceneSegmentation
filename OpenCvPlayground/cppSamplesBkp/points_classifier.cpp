@@ -1,5 +1,3 @@
-#include "points_classifier.h"
-
 #include "opencv2/core.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/ml.hpp"
@@ -294,7 +292,7 @@ static void find_decision_boundary_EM()
 }
 #endif
 
-int points_classifier()
+int main()
 {
     cout << "Use:" << endl
          << "  key '0' .. '1' - switch to class #n" << endl

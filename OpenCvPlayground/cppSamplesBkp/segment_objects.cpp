@@ -1,5 +1,3 @@
-#include "segment_objects.h"
-
 #include "opencv2/imgproc/imgproc.hpp"
 #include "opencv2/videoio/videoio.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -60,7 +58,7 @@ static void refineSegments(const Mat& img, Mat& mask, Mat& dst)
 }
 
 
-int segment_objects(int argc, char** argv)
+int main(int argc, char** argv)
 {
     VideoCapture cap;
     bool update_bg_model = true;

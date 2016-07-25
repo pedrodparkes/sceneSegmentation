@@ -1,5 +1,3 @@
-#include "delaunay2.h"
-
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
@@ -105,7 +103,7 @@ static void paint_voronoi( Mat& img, Subdiv2D& subdiv )
 }
 
 
-int delaunay2( int argc, char** argv )
+int main( int argc, char** argv )
 {
     cv::CommandLineParser parser(argc, argv, "{help h||}");
     if (parser.has("help"))

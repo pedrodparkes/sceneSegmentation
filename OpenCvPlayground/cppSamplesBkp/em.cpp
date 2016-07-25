@@ -1,5 +1,3 @@
-#include "em.h"
-
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
 #include "opencv2/ml.hpp"
@@ -7,7 +5,7 @@
 using namespace cv;
 using namespace cv::ml;
 
-int em( int /*argc*/, char** /*argv*/ )
+int main( int /*argc*/, char** /*argv*/ )
 {
     const int N = 4;
     const int N1 = (int)sqrt((double)N);

@@ -1,5 +1,3 @@
-#include "pca.h"
-
 /*
 * pca.cpp
 *
@@ -121,7 +119,7 @@ static void onTrackbar(int pos, void* ptr)
 
 ///////////////////////
 // Main
-int pca(int argc, char** argv)
+int main(int argc, char** argv)
 {
     cv::CommandLineParser parser(argc, argv, "{@input||image list}{help h||show help message}");
     if (parser.has("help"))
