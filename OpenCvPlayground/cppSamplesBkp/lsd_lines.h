@@ -1,0 +1,1 @@
+int lsd_lines(int argc, char** argv);

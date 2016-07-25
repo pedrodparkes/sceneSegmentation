@@ -13,13 +13,511 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\samples">
+      <UniqueIdentifier>{56953667-20a5-471b-a0ba-57228b1720ff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main1.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\opencv\sources\samples\cpp\main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="cppSamples\3calibration.cpp">
+      <Filter>Source Files\samples</Filter>
     </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\AddingImages.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\HighGUI\AddingImagesTrackbar.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\features2D\AKAZE_match.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\autofocus.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\BasicLinearTransforms.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\HighGUI\BasicLinearTransformsTrackbar.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\video\bg_sub.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\bgfg_segm.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\calcBackProject_Demo1.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\calcBackProject_Demo2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\calcHist_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\calibration.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\camera_calibration\camera_calibration.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\camshiftdemo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\CannyDetector_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\photo\seamless_cloning\cloning_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\cloning_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\photo\seamless_cloning\cloning_gui.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\cloning_gui.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\compareHist_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\connected_components.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\contours2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\convexhull.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\copyMakeBorder_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\TrackingMotion\cornerDetector_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\TrackingMotion\cornerHarris_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\TrackingMotion\cornerSubPix_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\cout_mat.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\create_mask.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\viz\creating_widgets.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\CsvReader.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\CsvWriter.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\dbt_face_detection.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\photo\decolorization\decolor.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\delaunay2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\demhist.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\detect_blob.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\detect_mser.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\dft.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\discrete_fourier_transform\discrete_fourier_transform.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\introduction\display_image\display_image.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\distrans.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\drawing.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\Matrix\Drawing_1.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\Matrix\Drawing_2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\edge.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\em.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\EqualizeHist_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\example_cmake\example.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\facedetect.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\facial_features.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\fback.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\ffilldemo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\file_input_output\file_input_output.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\filestorage.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\filter2D_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\findContours_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\fitellipse.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\HighGUI\GDAL_IO\gdal-image.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\generalContours_demo1.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\generalContours_demo2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\Geometric_Transforms_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\TrackingMotion\goodFeaturesToTrack_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\gpu\gpu-basics-similarity\gpu-basics-similarity.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\grabcut.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\photo\hdr_imaging\hdr_imaging.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\HoughCircle_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\houghcircles.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\houghlines.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\HoughLines_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\how_to_scan_images\how_to_scan_images.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\hull_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\image.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\image_alignment.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\image_sequence.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\imagelist_creator.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\imageSegmentation.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\inpaint.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\intelperc_capture.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\interoperability_with_OpenCV_1\interoperability_with_OpenCV_1.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ml\introduction_to_pca\introduction_to_pca.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ml\introduction_to_svm\introduction_to_svm.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\introduction\windows_visual_studio_Opencv\introduction_windows_vs.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\ippasync\ippasync_sample.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\kalman.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\kmeans.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\laplace.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\Laplace_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\xfeatures2D\LATCH_match.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\viz\launching_viz.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\letter_recog.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\lkdemo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\logistic_regression.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\lsd_lines.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\main_detection.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\main_registration.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\mask_tmpl.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\mat_mask_operations\mat_mask_operations.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\core\mat_the_basic_image_container\mat_the_basic_image_container.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\matchmethod_orb_akaze_brisk.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\Histograms_Matching\MatchTemplate_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Mesh.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\minarea.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Model.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\ModelRegistration.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\moments_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Morphology_1.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Morphology_2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Morphology_3.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\morphology2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ml\non_linear_svms\non_linear_svms.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\photo\non_photorealistic_rendering\npr_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\npr_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\objectDetection\objectDetection.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\objectDetection\objectDetection2.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\opencv_version.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\openni_capture.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\pca.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\phase_corr.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\features2D\AKAZE_tracking\planar_tracking.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\PnPProblem.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ShapeDescriptors\pointPolygonTest_demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\points_classifier.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\polar_transforms.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Pyramids.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\Remap_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\RobustMatcher.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\stereoBM\SBM_Sample.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\segment_objects.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\select3dobj.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\shape_example.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\smiledetect.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Smoothing.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgTrans\Sobel_Demo.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\squares.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\starter_imagelist.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\starter_video.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\stereo_calib.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\stereo_match.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\stitching.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\stitching_detailed.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\ImgProc\Threshold.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\train_HOG.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\viz\transformations.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tree_engine.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tvl1_optical_flow.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Utils.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\HighGUI\video-input-psnr-ssim\video-input-psnr-ssim.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\videostab.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\HighGUI\video-write\video-write.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\watershed.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+    <ClCompile Include="cppSamples\tutorial_code\viz\widget_pose.cpp">
+      <Filter>Source Files\samples</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenCV_debug.props" />
+    <None Include="OpenCV_release.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\CsvReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\CsvWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\ModelRegistration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\PnPProblem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\RobustMatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\calib3d\real_time_pose_estimation\src\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\features2D\AKAZE_tracking\stats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\features2D\AKAZE_tracking\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cppSamples\tutorial_code\gpu\gpu-thrust-interop\Thrust_interop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

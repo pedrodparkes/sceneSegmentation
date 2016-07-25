@@ -1,0 +1,1 @@
+int intelperc_capture(int argc, char* argv[]);

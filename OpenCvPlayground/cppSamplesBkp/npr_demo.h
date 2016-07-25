@@ -1,0 +1,1 @@
+int npr_demo(int argc, char* argv[]);

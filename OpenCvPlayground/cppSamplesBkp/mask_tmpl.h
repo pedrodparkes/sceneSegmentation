@@ -1,0 +1,1 @@
+int mask_tmpl( int argc, const char** argv );

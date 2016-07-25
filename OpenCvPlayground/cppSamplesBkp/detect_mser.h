@@ -1,0 +1,1 @@
+int detect_mser(int argc, char *argv[]);

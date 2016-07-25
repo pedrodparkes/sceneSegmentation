@@ -1,0 +1,1 @@
+int image( int argc, char** argv );

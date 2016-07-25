@@ -1,0 +1,1 @@
+int stitching_detailed(int argc, char* argv[]);

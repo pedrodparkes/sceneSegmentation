@@ -1,0 +1,1 @@
+int train_HOG( int argc, char** argv );

@@ -1,0 +1,1 @@
+int stereo_calib(int argc, char** argv);

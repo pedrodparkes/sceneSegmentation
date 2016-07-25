@@ -1,0 +1,1 @@
+int create_mask(int argc, char **argv);

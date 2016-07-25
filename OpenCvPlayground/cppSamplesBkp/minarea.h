@@ -1,0 +1,1 @@
+int minarea( int /*argc*/, char** /*argv*/ );

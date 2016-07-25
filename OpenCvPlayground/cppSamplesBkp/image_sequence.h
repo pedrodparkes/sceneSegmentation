@@ -1,0 +1,1 @@
+int image_sequence(int argc, char** argv);
