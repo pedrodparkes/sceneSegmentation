@@ -42,7 +42,7 @@ namespace watershed
 	        if( prevPt.x < 0 )
 	            prevPt = pt;
 	        line( markerMask, prevPt, pt, Scalar::all(255), 5, 8, 0 );
-	        line( img, prevPt, pt, Scalar::all(255), 5, 8, 0 );
+	        line( img, prevPt, pt, Scalar::all(127), 5, 8, 0 );
 	        prevPt = pt;
 	        imshow("image", img);
 	    }
